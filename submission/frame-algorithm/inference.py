@@ -7,10 +7,10 @@ shipped as plain `transformers` weights in ``resources/model/``. Nothing is load
 from a hub at runtime; there is no adapter to apply and no network to reach.
 
 Everything below is a faithful port of the pipeline that produced our evaluated
-predictions (judged meanAccuracy 0.6738) — ``infer.py`` + ``focus_common.py``.
-The prompt, the processor configuration, the generation settings and the EOS
-handling are byte-for-byte the same, because the smoke test that gates this image
-is "does the container reproduce our evaluated predictions".
+predictions — ``infer.py`` + ``focus_common.py``.  The prompt, the processor
+configuration, the generation settings and the EOS handling are byte-for-byte
+the same, because the smoke test that gates this image is "does the container
+reproduce our evaluated predictions".
 
 Three things here are load-bearing and must not be "improved":
 
