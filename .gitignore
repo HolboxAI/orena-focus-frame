@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data and models — never committed
+data/
+frames/
+metadata/
+*.parquet
+models/
+*.safetensors
+*.bin
+*.pt
+
+# Submission build artifacts
+submission/frame-algorithm/resources/
+submission/frame-algorithm/test/output/
+*.tar.gz
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

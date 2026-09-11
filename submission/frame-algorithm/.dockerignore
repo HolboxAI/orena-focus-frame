@@ -1,0 +1,6 @@
+test/
+resources/base*/
+resources/adapter/
+*.tar.gz
+__pycache__/
+*.pyc

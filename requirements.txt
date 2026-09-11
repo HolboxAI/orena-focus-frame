@@ -1,0 +1,18 @@
+# Training / evaluation stack (install on a GPU box).
+#
+# torch is installed separately as a CUDA build; the version below matches the
+# CUDA 12.8 environment used for training (adjust to your driver).
+
+torch>=2.7.0
+transformers==5.15.1
+peft==0.20.0
+accelerate==1.14.0
+datasets>=5.0.0
+
+# The official challenge client.
+orena-focus==0.3.5
+
+pandas>=2.0
+pyarrow>=14.0
+numpy>=1.23.0
+pillow>=9.0

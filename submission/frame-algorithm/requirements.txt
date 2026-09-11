@@ -1,0 +1,19 @@
+# ORena SAVE FOCUS — FRAME track, Qwen3.5-9B (merged, bf16)
+#
+# torch / torchvision come from the base image
+# (pytorch/pytorch:2.11.0-cuda12.8-cudnn9-runtime) and are deliberately NOT
+# pinned here: re-pinning torch against a mismatched CUDA build is a common way
+# to break the image. The Dockerfile guards the CUDA version instead.
+
+orena-focus==0.3.5
+
+# The exact stack that produced our predictions. Qwen3.5 support is
+# version-sensitive: the model class first appears in transformers 5.2.0, and
+# 5.15.1 is the version that trained and scored the checkpoint.
+transformers==5.15.1
+
+# Backs device_map="cuda:0" in the entrypoint.
+accelerate==1.14.0
+
+numpy>=1.23.0
+pillow>=9.0
